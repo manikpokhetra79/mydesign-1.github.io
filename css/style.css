@@ -1,0 +1,226 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 August 2020.
+    Author     : manik
+*/
+
+html,
+body {
+    height: 100%;
+    padding-top: 30px;;
+}
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    font-family: 'Signika', sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 27px;
+    letter-spacing: 2px;
+}
+.heading-style-tomato{
+color: tomato;
+transition: all 0.5s;
+transition-timing-function: ease-in;
+}
+.heading-style-tomato:hover{
+transform: translateY(-20px) ;
+}
+
+.heading-style-blue{
+color:  #006cff;
+}
+.navbar{
+    padding: 12px;
+    background-color: #1b1d1f;
+        border-color: #1b1d1f;
+        opacity: 1;
+}
+.navbar-brand{
+    font-family: 'Kaushan Script', cursive;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 16px;
+    color: #fff;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #ffc43b;
+}
+.navbar-dark .navbar-brand {
+    color: #ffc43b;
+     transition-duration: 1s;
+}
+.navbar-dark .navbar-brand:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+transform: scale(1.5);
+}
+@media (max-width: 600px){
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+transform: scale(1);
+}
+}
+.carousel-caption {
+ top: 30%;
+ 
+ }
+.carousel-caption h2{
+font-size: 60px;
+text-shadow: 1px 1px black;
+animation-name: carouselletter;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+.carousel-caption p{
+font-size: 30px;
+}
+@media (max-width: 1200px){
+    .carousel-caption h2{
+font-size: 30px;
+padding: auto;
+}
+.carousel-caption p{
+font-size: 20px;
+}
+}
+
+.btn-slider-1{
+    color: #fff;
+    font-size : 20px;
+    border-radius: 0;
+    background-color: #ffc43b;
+    padding: 20px 50px;
+     transition: all 0.3 ease-in-out;
+}
+.btn-slider-1:hover{
+    background-color: #fff;
+    color: #ffc43b;
+    }
+    @media (max-width: 768px){
+.btn-slider-1{
+    font-size : 15px;
+    padding: 15px 30px;
+}
+    }
+      @media (max-width: 610px){
+.btn-slider-1{
+    display: none;
+}
+    }
+
+.btn-slider-2{
+    color: #fff;
+    font-size : 20px;
+    border-radius: 0;
+    background-color: #3399cc;
+    padding: 20px 50px;
+     transition: all 0.3 ease-in-out;
+}
+.btn-slider-2:hover{
+    background-color: #fff;
+    color: #3399cc;
+     }
+      @media (max-width: 768px){
+.btn-slider-2{
+    font-size : 15px;
+    padding: 15px 30px;
+}
+    }
+    @media (max-width: 610px){
+.btn-slider-2{
+    display: none;
+}
+    }
+
+    /* about sect */
+#about-us{
+    padding: 60px 0;
+}
+.about-main p{
+    font-family: cursive;
+}
+.about-icons{
+    padding-top : 2em;
+}
+.about-icons img{
+    transition: ease-in-out;
+    transition-duration: 0.5s;
+}
+ .about-icons  img:hover{
+transform: scale(1.2);
+}
+
+/* services sect */
+#services{
+    background-color: #1b1d1f;
+    color: white;
+     padding: 60px 0;
+}
+#services h4{
+    font-weight: 400;
+    font-family: cursive;
+    animation-name: h4anim;
+     animation-duration: 0.8s;
+  animation-iteration-count: 5;
+  animation-delay: 5s;
+}
+@keyframes h4anim{
+0%{color: white;}
+100%{ color: tomato;}
+}
+.service-icons .fas{
+    padding-top: 2rem;
+    color: #ffc43b;
+   transition-timing-function: ease-in-out;
+    transition-property: transform;
+    transition-duration: 2s;
+transform-origin: left top;    
+}
+.service-icons .fas:hover{
+    transform: rotate(360deg);     
+}
+/* pricing section */
+#pricing{
+     padding: 60px 0;
+}
+
+
+/* footer */
+footer{
+   background-color: #343a40;
+   color: #fff;
+   padding: 30px 0;
+
+}
+footer h3{
+    font-weight: 300;
+    font-family: cursive;
+     color: #3399cc;
+}
+.fc{
+    padding-bottom: 30px ;
+}
+.credits{
+    border-top : 1px solid #fff;
+    padding-top: 15px;
+    margin: auto;
+}
+
+/* animation css */
+
+@keyframes carouselletter{
+    from{ opacity: 0;}
+    to {opacity: 1;}
+}
